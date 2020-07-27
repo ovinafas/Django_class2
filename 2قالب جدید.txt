@@ -1,0 +1,563 @@
+Microsoft Windows [Version 10.0.18362.900]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\Yakub>cd shopcenter
+
+C:\Users\Yakub\shopcenter>venv\Scripts\activate
+
+(venv) C:\Users\Yakub\shopcenter>cd shopping
+
+(venv) C:\Users\Yakub\shopcenter\shopping>npm i bootstrap jquery popper.js
+npm WARN deprecated popper.js@1.16.1: You can find the new Popper v2 at @popperjs/core, this package is dedicated to the legacy v1
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.3 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"ia32"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\webpack-dev-server\node_modules\fsevents):npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"ia32"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\watchpack-chokidar2\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"ia32"})
+
++ bootstrap@4.5.0
++ jquery@3.5.1
++ popper.js@1.16.1
+added 3 packages from 5 contributors and audited 1375 packages in 82.304s
+found 0 vulnerabilities
+
+
+(venv) C:\Users\Yakub\shopcenter\shopping>npm run build
+
+> shopping@0.1.0 build C:\Users\Yakub\shopcenter\shopping
+> vue-cli-service build
+
+
+/  Building for production...
+
+ ERROR  Failed to compile with 1 errors                                                                         19:07:33
+ error  in ./src/assets/styles/app.scss
+
+Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):
+ModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+SassError: style declaration must contain a value
+        on line 921 of src/assets/styles/_main.scss
+        from line 25 of C:\Users\Yakub\shopcenter\shopping\src\assets\styles\app.scss
+>>   opacity: ;
+   ---------^
+
+    at C:\Users\Yakub\shopcenter\shopping\node_modules\webpack\lib\NormalModule.js:316:20
+    at C:\Users\Yakub\shopcenter\shopping\node_modules\loader-runner\lib\LoaderRunner.js:367:11
+    at C:\Users\Yakub\shopcenter\shopping\node_modules\loader-runner\lib\LoaderRunner.js:233:18
+    at context.callback (C:\Users\Yakub\shopcenter\shopping\node_modules\loader-runner\lib\LoaderRunner.js:111:13)
+    at Object.callback (C:\Users\Yakub\shopcenter\shopping\node_modules\sass-loader\dist\index.js:73:7)
+    at Object.done [as callback] (C:\Users\Yakub\shopcenter\shopping\node_modules\neo-async\async.js:8067:18)
+    at options.error (C:\Users\Yakub\shopcenter\shopping\node_modules\node-sass\lib\index.js:294:32)
+
+ @ ./src/main.js 11:0-34
+ @ multi ./src/main.js
+
+ ERROR  Build failed with errors.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! shopping@0.1.0 build: `vue-cli-service build`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the shopping@0.1.0 build script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Yakub\AppData\Roaming\npm-cache\_logs\2020-06-20T16_07_35_343Z-debug.log
+
+(venv) C:\Users\Yakub\shopcenter\shopping>npm run build
+
+> shopping@0.1.0 build C:\Users\Yakub\shopcenter\shopping
+> vue-cli-service build
+
+
+/  Building for production...
+
+ ERROR  Failed to compile with 1 errors                                                                         19:10:39
+ error  in ./src/assets/styles/app.scss
+
+Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):
+ModuleNotFoundError: Module not found: Error: Can't resolve '../images/home/searchicon.png' in 'C:\Users\Yakub\shopcenter\shopping\src\assets\styles'
+    at C:\Users\Yakub\shopcenter\shopping\node_modules\webpack\lib\Compilation.js:925:10
+    at C:\Users\Yakub\shopcenter\shopping\node_modules\webpack\lib\NormalModuleFactory.js:401:22
+    at C:\Users\Yakub\shopcenter\shopping\node_modules\webpack\lib\NormalModuleFactory.js:130:21
+    at C:\Users\Yakub\shopcenter\shopping\node_modules\webpack\lib\NormalModuleFactory.js:224:22
+    at C:\Users\Yakub\shopcenter\shopping\node_modules\neo-async\async.js:2830:7
+    at C:\Users\Yakub\shopcenter\shopping\node_modules\neo-async\async.js:6877:13
+    at C:\Users\Yakub\shopcenter\shopping\node_modules\webpack\lib\NormalModuleFactory.js:214:25
+    at C:\Users\Yakub\shopcenter\shopping\node_modules\enhanced-resolve\lib\Resolver.js:213:14
+    at C:\Users\Yakub\shopcenter\shopping\node_modules\enhanced-resolve\lib\Resolver.js:285:5
+    at eval (eval at create (C:\Users\Yakub\shopcenter\shopping\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:15:1)
+    at C:\Users\Yakub\shopcenter\shopping\node_modules\enhanced-resolve\lib\UnsafeCachePlugin.js:44:7
+    at C:\Users\Yakub\shopcenter\shopping\node_modules\enhanced-resolve\lib\Resolver.js:285:5
+    at eval (eval at create (C:\Users\Yakub\shopcenter\shopping\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:15:1)
+    at C:\Users\Yakub\shopcenter\shopping\node_modules\enhanced-resolve\lib\Resolver.js:285:5
+    at eval (eval at create (C:\Users\Yakub\shopcenter\shopping\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:27:1)
+    at C:\Users\Yakub\shopcenter\shopping\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:67:43
+
+ @ ./src/main.js 11:0-34
+ @ multi ./src/main.js
+
+ ERROR  Build failed with errors.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! shopping@0.1.0 build: `vue-cli-service build`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the shopping@0.1.0 build script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Yakub\AppData\Roaming\npm-cache\_logs\2020-06-20T16_10_39_308Z-debug.log
+
+\  Building for production...
+
+ WARNING  Compiled with 2 warnings                                                                              19:15:54
+ warning
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets:
+  static/js/chunk-vendors.0496cd4a.js (296 KiB)
+  images/home/Map.jpg (473 KiB)
+  images/home/Tabs.psd (248 KiB)
+  images/product-details/Socials.psd (1.1 MiB)
+  images/home/Slider.psd (5.97 MiB)
+
+ warning
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (476 KiB)
+      static/css/chunk-vendors.0ba3e87d.css
+      static/js/chunk-vendors.0496cd4a.js
+      static/css/app.99bf914f.css
+      static/js/app.82790b23.js
+
+
+  File                                      Size             Gzipped
+
+  dist\static\js\chunk-vendors.0496cd4a.    296.39 KiB       97.05 KiB
+  js
+  dist\static\js\app.82790b23.js            6.45 KiB         2.33 KiB
+  dist\static\js\about.28934937.js          0.44 KiB         0.31 KiB
+  dist\static\css\chunk-vendors.0ba3e87d    141.78 KiB       22.48 KiB
+  .css
+  dist\static\css\app.99bf914f.css          31.54 KiB        6.72 KiB
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The dist directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+
+
+(venv) C:\Users\Yakub\shopcenter\shopping>npm run build
+
+> shopping@0.1.0 build C:\Users\Yakub\shopcenter\shopping
+> vue-cli-service build
+
+
+-  Building for production...
+
+ WARNING  Compiled with 2 warnings                                                                              19:17:50
+ warning
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets:
+  static/js/chunk-vendors.0496cd4a.js (296 KiB)
+  static/images/home/Map.jpg (473 KiB)
+  static/images/home/Tabs.psd (248 KiB)
+  static/images/product-details/Socials.psd (1.1 MiB)
+  static/images/home/Slider.psd (5.97 MiB)
+
+ warning
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (476 KiB)
+      static/css/chunk-vendors.0ba3e87d.css
+      static/js/chunk-vendors.0496cd4a.js
+      static/css/app.99bf914f.css
+      static/js/app.82790b23.js
+
+
+  File                                      Size             Gzipped
+
+  dist\static\js\chunk-vendors.0496cd4a.    296.39 KiB       97.05 KiB
+  js
+  dist\static\js\app.82790b23.js            6.45 KiB         2.33 KiB
+  dist\static\js\about.28934937.js          0.44 KiB         0.31 KiB
+  dist\static\css\chunk-vendors.0ba3e87d    141.78 KiB       22.48 KiB
+  .css
+  dist\static\css\app.99bf914f.css          31.54 KiB        6.72 KiB
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The dist directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+
+
+(venv) C:\Users\Yakub\shopcenter\shopping>npm run build
+
+> shopping@0.1.0 build C:\Users\Yakub\shopcenter\shopping
+> vue-cli-service build
+
+
+|  Building for production...
+
+ ERROR  Failed to compile with 1 errors                                                                         19:47:32
+ error  in ./src/components/layouts/MainHeader.vue
+
+Module Error (from ./node_modules/eslint-loader/index.js):
+
+C:\Users\Yakub\shopcenter\shopping\src\components\layouts\MainHeader.vue
+   3:5  warning  Delete `····`                                                 prettier/prettier
+   4:5  warning  Replace `···<h2>{{title` with `<h2>{{·title·`                 prettier/prettier
+  17:3  error    `data` property in component must be a function               vue/no-shared-component-data
+  18:5  warning  Replace `··title:·'Main·Header'` with `title:·"Main·Header"`  prettier/prettier
+
+✖ 4 problems (1 error, 3 warnings)
+  1 error and 3 warnings potentially fixable with the `--fix` option.
+
+
+ @ ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/layouts/BaseLayout.vue?vue&type=script&lang=js& 13:0-57 17:16-26
+ @ ./src/components/layouts/BaseLayout.vue?vue&type=script&lang=js&
+ @ ./src/components/layouts/BaseLayout.vue
+ @ ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/views/About.vue?vue&type=script&lang=js&
+ @ ./src/views/About.vue?vue&type=script&lang=js&
+ @ ./src/views/About.vue
+ @ ./src/router/index.js
+ @ ./src/main.js
+ @ multi ./src/main.js
+
+ ERROR  Build failed with errors.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! shopping@0.1.0 build: `vue-cli-service build`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the shopping@0.1.0 build script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Yakub\AppData\Roaming\npm-cache\_logs\2020-06-20T16_47_39_635Z-debug.log
+
+(venv) C:\Users\Yakub\shopcenter\shopping>npm run build
+
+> shopping@0.1.0 build C:\Users\Yakub\shopcenter\shopping
+> vue-cli-service build
+
+
+|  Building for production...
+
+ ERROR  Failed to compile with 1 errors                                                                         19:55:55
+ error  in ./src/components/layouts/MainHeader.vue
+
+Module Error (from ./node_modules/eslint-loader/index.js):
+
+C:\Users\Yakub\shopcenter\shopping\src\components\layouts\MainHeader.vue
+  18:6  error  Parsing error: Unexpected keyword 'return'
+
+   8 |   },
+   9 |   data: {
+> 10 |       return {
+     |       ^
+  11 |           title: 'Main Header'
+  12 |       }
+  13 |
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+ @ ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/layouts/BaseLayout.vue?vue&type=script&lang=js& 13:0-57 17:16-26
+ @ ./src/components/layouts/BaseLayout.vue?vue&type=script&lang=js&
+ @ ./src/components/layouts/BaseLayout.vue
+ @ ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/views/Home.vue?vue&type=script&lang=js&
+ @ ./src/views/Home.vue?vue&type=script&lang=js&
+ @ ./src/views/Home.vue
+ @ ./src/router/index.js
+ @ ./src/main.js
+ @ multi ./src/main.js
+
+ ERROR  Build failed with errors.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! shopping@0.1.0 build: `vue-cli-service build`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the shopping@0.1.0 build script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Yakub\AppData\Roaming\npm-cache\_logs\2020-06-20T16_55_58_204Z-debug.log
+
+|  Building for production...
+
+ WARNING  Compiled with 3 warnings                                                                              19:57:54
+Module Warning (from ./node_modules/eslint-loader/index.js):
+
+C:\Users\Yakub\shopcenter\shopping\src\components\layouts\MainHeader.vue
+   3:5  warning  Delete `····`                                                               prettier/prettier
+   4:5  warning  Replace `···<h2>{{title` with `<h2>{{·title·`                               prettier/prettier
+  18:5  warning  Delete `··`                                                                 prettier/prettier
+  19:1  warning  Replace `··········title:·'Main·Header'` with `······title:·"Main·Header"`  prettier/prettier
+  20:1  warning  Replace `······}␍⏎······` with `····};`                                     prettier/prettier
+
+✖ 5 problems (0 errors, 5 warnings)
+  0 errors and 5 warnings potentially fixable with the `--fix` option.
+
+
+You may use special comments to disable some warnings.
+Use // eslint-disable-next-line to ignore the next line.
+Use /* eslint-disable */ to ignore all warnings in a file.
+ warning
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets:
+  static/js/chunk-vendors.0496cd4a.js (296 KiB)
+  static/images/home/Map.jpg (473 KiB)
+  static/images/home/Tabs.psd (248 KiB)
+  static/images/product-details/Socials.psd (1.1 MiB)
+  static/images/home/Slider.psd (5.97 MiB)
+
+ warning
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (474 KiB)
+      static/css/chunk-vendors.0ba3e87d.css
+      static/js/chunk-vendors.0496cd4a.js
+      static/css/app.71649c28.css
+      static/js/app.08dbe1f3.js
+
+
+  File                                      Size             Gzipped
+
+  dist\static\js\chunk-vendors.0496cd4a.    296.39 KiB       97.05 KiB
+  js
+  dist\static\js\app.08dbe1f3.js            4.21 KiB         1.90 KiB
+  dist\static\js\about.b1d698c8.js          0.52 KiB         0.38 KiB
+  dist\static\css\chunk-vendors.0ba3e87d    141.78 KiB       22.48 KiB
+  .css
+  dist\static\css\app.71649c28.css          31.37 KiB        6.67 KiB
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The dist directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+
+
+(venv) C:\Users\Yakub\shopcenter\shopping>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 20, 2020 - 19:58:53
+Django version 3.0.7, using settings 'shopping.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[20/Jun/2020 19:59:03] "GET / HTTP/1.1" 200 955
+[20/Jun/2020 19:59:14] "GET /static/css/app.71649c28.css HTTP/1.1" 200 32125
+[20/Jun/2020 19:59:14] "GET /static/js/app.08dbe1f3.js HTTP/1.1" 200 4308
+[20/Jun/2020 19:59:14] "GET /static/css/chunk-vendors.0ba3e87d.css HTTP/1.1" 200 145183
+[20/Jun/2020 19:59:14] "GET /static/js/chunk-vendors.0496cd4a.js HTTP/1.1" 200 303501
+[20/Jun/2020 19:59:14] "GET /static/js/about.b1d698c8.js HTTP/1.1" 200 534
+
+|  Building for production...
+
+ WARNING  Compiled with 4 warnings                                                                              20:05:56
+Module Warning (from ./node_modules/eslint-loader/index.js):
+
+C:\Users\Yakub\shopcenter\shopping\src\components\layouts\BaseLayout.vue
+  3:5  warning  Delete `····`                   prettier/prettier
+  4:1  warning  Replace `········` with `····`  prettier/prettier
+  5:5  warning  Delete `····`                   prettier/prettier
+  6:1  warning  Replace `········` with `····`  prettier/prettier
+  7:5  warning  Delete `····`                   prettier/prettier
+  8:1  warning  Replace `········` with `····`  prettier/prettier
+  9:1  warning  Delete `····`                   prettier/prettier
+
+✖ 7 problems (0 errors, 7 warnings)
+  0 errors and 7 warnings potentially fixable with the `--fix` option.
+
+
+Module Warning (from ./node_modules/eslint-loader/index.js):
+
+C:\Users\Yakub\shopcenter\shopping\src\components\layouts\MainFooter.vue
+    2:23  warning  Insert `␍⏎····`                                                                                                                                                                                                                                                                                                                                      prettier/prettier
+    4:7   warning  Delete `··`                                                                                                                                                                                                                                                                                                                                          prettier/prettier
+    5:1   warning  Replace `············` with `········`                                                                                                                                                                                                                                                                                                               prettier/prettier
+    6:1   warning  Replace `················` with `··········`                                                                                                                                                                                                                                                                                                         prettier/prettier
+    7:13  warning  Replace `········<h3>Be·aware·of·our·special·discounts·by·subscribing·to·our·newsletter·...·</h3>` with `<h3>␍⏎··············Be·aware·of·our·special·discounts·by·subscribing·to·our·newsletter␍⏎··············...`                                                                                                                                  prettier/prettier
+    8:1   warning  Replace `········` with `············</h3>␍⏎`                                                                                                                                                                                                                                                                                                        prettier/prettier
+    9:1   warning  Replace `························<input·type="text"·placeholder="Your·email·address·..."` with `··············<input·type="text"·placeholder="Your·email·address·..."·`                                                                                                                                                                              prettier/prettier
+   10:1   warning  Replace `························` with `··············`                                                                                                                                                                                                                                                                                             prettier/prettier
+   11:17  warning  Delete `············`                                                                                                                                                                                                                                                                                                                                prettier/prettier
+   12:1   warning  Replace `························` with `··············`                                                                                                                                                                                                                                                                                             prettier/prettier
+   13:1   warning  Replace `····················` with `············`                                                                                                                                                                                                                                                                                                   prettier/prettier
+   14:1   warning  Replace `················` with `··········`                                                                                                                                                                                                                                                                                                         prettier/prettier
+   15:1   warning  Replace `············` with `········`                                                                                                                                                                                                                                                                                                               prettier/prettier
+   16:1   warning  Delete `··`                                                                                                                                                                                                                                                                                                                                          prettier/prettier
+   20:7   warning  Delete `··`                                                                                                                                                                                                                                                                                                                                          prettier/prettier
+   21:1   warning  Replace `············` with `········`                                                                                                                                                                                                                                                                                                               prettier/prettier
+   22:1   warning  Delete `······`                                                                                                                                                                                                                                                                                                                                      prettier/prettier
+   23:1   warning  Replace `····················` with `············`                                                                                                                                                                                                                                                                                                   prettier/prettier
+   24:1   warning  Replace `························<img·src="/static/images/home/map.png"·alt=""` with `··············<img·src="/static/images/home/map.png"·alt=""·`                                                                                                                                                                                                  prettier/prettier
+   25:1   warning  Delete `········`                                                                                                                                                                                                                                                                                                                                    prettier/prettier
+   26:11  warning  Delete `······`                                                                                                                                                                                                                                                                                                                                      prettier/prettier
+   27:1   warning  Delete `······`                                                                                                                                                                                                                                                                                                                                      prettier/prettier
+   28:1   warning  Replace `····················` with `············`                                                                                                                                                                                                                                                                                                   prettier/prettier
+   29:1   warning  Replace `························<img·src="/ststic/images/home/map.png"·alt=""` with `··············<img·src="/ststic/images/home/map.png"·alt=""·`                                                                                                                                                                                                  prettier/prettier
+   30:1   warning  Replace `····················` with `············`                                                                                                                                                                                                                                                                                                   prettier/prettier
+   31:1   warning  Replace `················` with `··········`                                                                                                                                                                                                                                                                                                         prettier/prettier
+   32:1   warning  Replace `················` with `··········`                                                                                                                                                                                                                                                                                                         prettier/prettier
+   33:1   warning  Delete `········`                                                                                                                                                                                                                                                                                                                                    prettier/prettier
+   34:1   warning  Replace `························` with `··············`                                                                                                                                                                                                                                                                                             prettier/prettier
+   35:15  warning  Replace `··········<h4>·` with `<h4>`                                                                                                                                                                                                                                                                                                                prettier/prettier
+   36:1   warning  Replace `························` with `··············`                                                                                                                                                                                                                                                                                             prettier/prettier
+   37:1   warning  Replace `····························Lorem·ipsum·dolor·sit·amet,·consectetur·adipiscing·elit.` with `················Lorem·ipsum·dolor·sit·amet,·consectetur·adipiscing·elit.·The`                                                                                                                                                                   prettier/prettier
+   38:1   warning  Replace `····························The·fabrication·is·by·producing·an·incomprehensible·simplicity·of·the·printing·industry·and·using·graphic·designers.·Printers·and·texts` with `················fabrication·is·by·producing·an·incomprehensible·simplicity·of␍⏎················the·printing·industry·and·using·graphic·designers.·Printers·and`  prettier/prettier
+   39:17  warning  Replace `·············Rather,·newspapers·and·magazines·in·the·column·and·row·as` with `texts·Rather,·newspapers·and·magazines·in·the·column·and·row·as␍⏎···············`                                                                                                                                                                             prettier/prettier
+   40:1   warning  Replace `·····························Various·applications·are·aimed·at·improving·the·application·tools.·Many·books·in·the·past·sixty-three·percent,` with `················Various·applications·are·aimed·at·improving·the·application␍⏎················tools.·Many·books·in·the·past·sixty-three·percent,·The·present`                             prettier/prettier
+   41:1   warning  Replace `·····························The·present·and·the·future·require·a·lot·of·knowledge·from·the·community·and·professionals·to·get·to·know·more·about·the·software` with `················and·the·future·require·a·lot·of·knowledge·from·the·community·and␍⏎················professionals·to·get·to·know·more·about·the·software·Computer`      prettier/prettier
+   42:1   warning  Replace `·····························Computer·designers,·especially·creative·designers·and·leading.</p>` with `················designers,·especially·creative·designers·and·leading.`                                                                                                                                                               prettier/prettier
+   43:15  warning  Insert `</p>␍⏎······`                                                                                                                                                                                                                                                                                                                                prettier/prettier
+   44:11  warning  Delete `······`                                                                                                                                                                                                                                                                                                                                      prettier/prettier
+   45:1   warning  Replace `············` with `········`                                                                                                                                                                                                                                                                                                               prettier/prettier
+   46:1   warning  Delete `··`                                                                                                                                                                                                                                                                                                                                          prettier/prettier
+   50:7   warning  Delete `··`                                                                                                                                                                                                                                                                                                                                          prettier/prettier
+   51:1   warning  Replace `············` with `········`                                                                                                                                                                                                                                                                                                               prettier/prettier
+   52:1   warning  Delete `······`                                                                                                                                                                                                                                                                                                                                      prettier/prettier
+   53:13  warning  Delete `········`                                                                                                                                                                                                                                                                                                                                    prettier/prettier
+   54:1   warning  Replace `························` with `··············`                                                                                                                                                                                                                                                                                             prettier/prettier
+   55:1   warning  Delete `··········`                                                                                                                                                                                                                                                                                                                                  prettier/prettier
+   56:1   warning  Replace `····························` with `················`                                                                                                                                                                                                                                                                                       prettier/prettier
+   57:1   warning  Replace `····························` with `················`                                                                                                                                                                                                                                                                                       prettier/prettier
+   58:1   warning  Delete `············`                                                                                                                                                                                                                                                                                                                                prettier/prettier
+   59:1   warning  Replace `····························` with `················`                                                                                                                                                                                                                                                                                       prettier/prettier
+   60:1   warning  Replace `····························` with `················`                                                                                                                                                                                                                                                                                       prettier/prettier
+   61:15  warning  Delete `··········`                                                                                                                                                                                                                                                                                                                                  prettier/prettier
+   62:1   warning  Replace `····················` with `············`                                                                                                                                                                                                                                                                                                   prettier/prettier
+   63:1   warning  Replace `················` with `··········`                                                                                                                                                                                                                                                                                                         prettier/prettier
+   64:1   warning  Replace `················` with `··········`                                                                                                                                                                                                                                                                                                         prettier/prettier
+   65:1   warning  Delete `········`                                                                                                                                                                                                                                                                                                                                    prettier/prettier
+   66:1   warning  Replace `························` with `··············`                                                                                                                                                                                                                                                                                             prettier/prettier
+   67:1   warning  Delete `··········`                                                                                                                                                                                                                                                                                                                                  prettier/prettier
+   68:1   warning  Replace `····························` with `················`                                                                                                                                                                                                                                                                                       prettier/prettier
+   69:1   warning  Replace `····························` with `················`                                                                                                                                                                                                                                                                                       prettier/prettier
+   70:1   warning  Delete `············`                                                                                                                                                                                                                                                                                                                                prettier/prettier
+   71:1   warning  Replace `····························` with `················`                                                                                                                                                                                                                                                                                       prettier/prettier
+   72:1   warning  Replace `····························` with `················`                                                                                                                                                                                                                                                                                       prettier/prettier
+   73:15  warning  Delete `··········`                                                                                                                                                                                                                                                                                                                                  prettier/prettier
+   74:1   warning  Replace `····················` with `············`                                                                                                                                                                                                                                                                                                   prettier/prettier
+   75:1   warning  Replace `················` with `··········`                                                                                                                                                                                                                                                                                                         prettier/prettier
+   76:1   warning  Replace `················` with `··········`                                                                                                                                                                                                                                                                                                         prettier/prettier
+   77:1   warning  Delete `········`                                                                                                                                                                                                                                                                                                                                    prettier/prettier
+   78:1   warning  Replace `························` with `··············`                                                                                                                                                                                                                                                                                             prettier/prettier
+   79:1   warning  Delete `··········`                                                                                                                                                                                                                                                                                                                                  prettier/prettier
+   80:1   warning  Replace `····························` with `················`                                                                                                                                                                                                                                                                                       prettier/prettier
+   81:1   warning  Replace `····························` with `················`                                                                                                                                                                                                                                                                                       prettier/prettier
+   82:17  warning  Delete `············`                                                                                                                                                                                                                                                                                                                                prettier/prettier
+   83:1   warning  Replace `····························` with `················`                                                                                                                                                                                                                                                                                       prettier/prettier
+   84:1   warning  Replace `····························` with `················`                                                                                                                                                                                                                                                                                       prettier/prettier
+   85:15  warning  Delete `··········`                                                                                                                                                                                                                                                                                                                                  prettier/prettier
+   86:1   warning  Replace `····················` with `············`                                                                                                                                                                                                                                                                                                   prettier/prettier
+   87:1   warning  Replace `················` with `··········`                                                                                                                                                                                                                                                                                                         prettier/prettier
+   88:1   warning  Replace `················` with `··········`                                                                                                                                                                                                                                                                                                         prettier/prettier
+   89:1   warning  Delete `········`                                                                                                                                                                                                                                                                                                                                    prettier/prettier
+   90:1   warning  Replace `························` with `··············`                                                                                                                                                                                                                                                                                             prettier/prettier
+   91:1   warning  Delete `··········`                                                                                                                                                                                                                                                                                                                                  prettier/prettier
+   92:1   warning  Replace `····························` with `················`                                                                                                                                                                                                                                                                                       prettier/prettier
+   93:1   warning  Replace `····························` with `················`                                                                                                                                                                                                                                                                                       prettier/prettier
+   94:1   warning  Delete `············`                                                                                                                                                                                                                                                                                                                                prettier/prettier
+   95:1   warning  Replace `····························` with `················`                                                                                                                                                                                                                                                                                       prettier/prettier
+   96:1   warning  Replace `····························` with `················`                                                                                                                                                                                                                                                                                       prettier/prettier
+   97:1   warning  Delete `··········`                                                                                                                                                                                                                                                                                                                                  prettier/prettier
+   98:13  warning  Delete `········`                                                                                                                                                                                                                                                                                                                                    prettier/prettier
+   99:1   warning  Replace `················` with `··········`                                                                                                                                                                                                                                                                                                         prettier/prettier
+  100:1   warning  Replace `············` with `········`                                                                                                                                                                                                                                                                                                               prettier/prettier
+  101:1   warning  Delete `··`                                                                                                                                                                                                                                                                                                                                          prettier/prettier
+  105:7   warning  Delete `··`                                                                                                                                                                                                                                                                                                                                          prettier/prettier
+  106:1   warning  Delete `····`                                                                                                                                                                                                                                                                                                                                        prettier/prettier
+  107:11  warning  Replace `······<p·class="pull-left">Copyright·©·2020␍⏎····················<a·target="_blank"·href="#"><b>Group</b></a` with `<p·class="pull-left">␍⏎············Copyright·©·2020·<a·target="_blank"·href="#"><b>Group</b></a␍⏎············`                                                                                                          prettier/prettier
+  109:1   warning  Replace `················` with `··········`                                                                                                                                                                                                                                                                                                         prettier/prettier
+  110:1   warning  Delete `····`                                                                                                                                                                                                                                                                                                                                        prettier/prettier
+  111:1   warning  Replace `········` with `······`                                                                                                                                                                                                                                                                                                                     prettier/prettier
+  113:1   warning  Replace `␍⏎</footer>` with `··</footer>␍⏎··`                                                                                                                                                                                                                                                                                                         prettier/prettier
+  117:9   warning  Delete `␍⏎`                                                                                                                                                                                                                                                                                                                                          prettier/prettier
+  121:16  warning  Replace `␍⏎···␍⏎··},␍⏎·` with `}`                                                                                                                                                                                                                                                                                                                    prettier/prettier
+
+✖ 102 problems (0 errors, 102 warnings)
+  0 errors and 102 warnings potentially fixable with the `--fix` option.
+
+
+You may use special comments to disable some warnings.
+Use // eslint-disable-next-line to ignore the next line.
+Use /* eslint-disable */ to ignore all warnings in a file.
+ warning
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets:
+  static/js/chunk-vendors.0496cd4a.js (296 KiB)
+  static/images/home/Map.jpg (473 KiB)
+  static/images/home/Tabs.psd (248 KiB)
+  static/images/product-details/Socials.psd (1.1 MiB)
+  static/images/home/Slider.psd (5.97 MiB)
+
+ warning
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (478 KiB)
+      static/css/chunk-vendors.0ba3e87d.css
+      static/js/chunk-vendors.0496cd4a.js
+      static/css/app.71649c28.css
+      static/js/app.8e4b12ae.js
+
+
+  File                                      Size             Gzipped
+
+  dist\static\js\chunk-vendors.0496cd4a.    296.39 KiB       97.05 KiB
+  js
+  dist\static\js\app.8e4b12ae.js            8.25 KiB         3.00 KiB
+  dist\static\js\about.b1d698c8.js          0.52 KiB         0.38 KiB
+  dist\static\css\chunk-vendors.0ba3e87d    141.78 KiB       22.48 KiB
+  .css
+  dist\static\css\app.71649c28.css          31.37 KiB        6.67 KiB
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The dist directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+
+
+(venv) C:\Users\Yakub\shopcenter\shopping>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 20, 2020 - 20:07:00
+Django version 3.0.7, using settings 'shopping.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[20/Jun/2020 20:07:04] "GET / HTTP/1.1" 200 955
+[20/Jun/2020 20:07:04] "GET /static/js/app.8e4b12ae.js HTTP/1.1" 200 8443
+[20/Jun/2020 20:07:04] "GET /static/css/app.71649c28.css HTTP/1.1" 200 32125
+[20/Jun/2020 20:07:04] "GET /static/css/chunk-vendors.0ba3e87d.css HTTP/1.1" 200 145183
+[20/Jun/2020 20:07:04] "GET /static/js/chunk-vendors.0496cd4a.js HTTP/1.1" 200 303501
+[20/Jun/2020 20:07:04] "GET /static/js/about.b1d698c8.js HTTP/1.1" 200 534
+[20/Jun/2020 20:07:05] "GET /static/images/home/map.png HTTP/1.1" 200 14823
+Not Found: /ststic/images/home/map.png
+[20/Jun/2020 20:07:05] "GET /ststic/images/home/map.png HTTP/1.1" 404 2179
+Not Found: /ststic/images/home/map.png
+[20/Jun/2020 20:07:31] "GET /ststic/images/home/map.png HTTP/1.1" 404 2179
+Not Found: /ststic/images/home/map.png
+[20/Jun/2020 20:07:35] "GET /ststic/images/home/map.png HTTP/1.1" 404 2179
